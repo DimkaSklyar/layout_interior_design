@@ -337,6 +337,8 @@ body
 	font-size: 450px
 	font-weight: 900
 	top: -80px
+	+media-breakpoint-down(xl)
+		font-size: 385px
 .section__title
 	h2
 		font-size: 59px
@@ -345,6 +347,8 @@ body
 		padding-left: 150px
 		padding-top: 150px
 		text-transform: uppercase
+		+media-breakpoint-down(xl)
+			padding-top: 95px
 		span
 			display: block
 			font-weight: 900
@@ -356,9 +360,14 @@ body
 	line-height: 1.55
 	font-size: 18px
 	padding-right: 40px
+	+media-breakpoint-down(xl)
+		padding-right: 0
+		font-size: 17px
 
 .benefist
 	padding-top: 30px
+	+media-breakpoint-down(xl)
+		text-align: right
 	&__item
 		&-1
 			margin-bottom: 120px
@@ -435,8 +444,14 @@ body
 	.section__title
 		h2
 			padding-left: 0
+			+media-breakpoint-down(xl)
+				font-size: 42px
+			span
+				+media-breakpoint-down(xl)
+					font-size: 50px
 	.section__desc
 		padding-top: 50px
+
 
 #clockdiv
 	display: flex
@@ -447,10 +462,14 @@ body
 			font-size: 90px
 			font-weight: 700
 			line-height: 1.4
+			+media-breakpoint-down(xl)
+				font-size: 60px
 		.smalltext
 			text-align: center
 			text-transform: uppercase
 			font-weight: 700
+			+media-breakpoint-down(xl)
+				font-size: 16px
 
 .offer__img
 	margin-top: 40px
@@ -486,14 +505,24 @@ body
 
 .testimonial
 	padding: 100px 0
+	+media-breakpoint-down(xl)
+		padding: 0 0 60px
 	.section__title
 		padding-bottom: 100px
 	&__item
-
+		+media-breakpoint-down(xl)
+			overflow: hidden
 	&__img
 		position: absolute
 		right: 0
 		z-index: -1
+		+media-breakpoint-down(xl)
+			right: auto
+		img
+			+media-breakpoint-down(xl)
+				width: 100%
+		+media-breakpoint-down(xl)
+			overflow: hidden
 		&.bcg-1
 			background: url('../img/testimonial/testimonial-1.jpg') no-repeat
 			background-position: 90%
@@ -511,7 +540,10 @@ body
 		min-height: 640px
 		margin-left: 90px
 		padding-right: 30px
-
+		+media-breakpoint-down(xl)
+			padding-top: 40px
+			margin-left: 30px
+			min-height: 500px
 	&__number
 		position: absolute
 		font-size: 80px
@@ -519,6 +551,13 @@ body
 		transform: rotate(-90deg)
 		top: 18%
 		color: #282832
+		+media-breakpoint-down(xl)
+			color: #fff
+			transform: rotate(0)
+			position: static
+			top: auto
+			padding-left: 15px
+			opacity: .7
 
 	&__name
 		font-weight: 700
@@ -563,6 +602,8 @@ body
 	border: 1px solid #2c2b32
 	border-left: 3px solid #ffffff
 	padding: 13px 19px
+	+media-breakpoint-down(xl)
+		margin-top: 30px
 
 .btn_sub
 	height: 60px
@@ -578,6 +619,8 @@ body
 	margin-left: -5px
 	position: relative
 	text-transform: uppercase
+	+media-breakpoint-down(xl)
+		width: 73%
 	&:before
 		position: absolute
 		content: ''
@@ -595,6 +638,8 @@ body
 	right: -100px
 	left: 30px
 	position: absolute
+	+media-breakpoint-down(xl)
+		padding: 80px 100px
 #svyaz
 	.input__wrap
 		display: flex
@@ -602,14 +647,22 @@ body
 		width: 100%
 		padding-right: 60px
 		margin-bottom: 60px
+		+media-breakpoint-down(xl)
+			padding-right: 30px
 	h2
 		font-size: 70px
 		font-weight: 900
 		margin-bottom: 100px
+		+media-breakpoint-down(xxl)
+			font-size: 60px
+		+media-breakpoint-down(xl)
+			font-size: 50px
 	label
 		display: block
 		font-weight: 700
 		font-size: 32px
+		+media-breakpoint-down(xl)
+			font-size: 24px
 	input,
 	textarea
 		width: 100%
@@ -643,10 +696,14 @@ body
 footer
 	background-color: #0f0f12
 	padding: 80px 0 130px
+	+media-breakpoint-down(xl)
+		padding: 80px 0 20px
 	h2
 		font-size: 28px
 		font-weight: 700
 		margin-bottom: 40px
+		+media-breakpoint-down(xl)
+			font-size: 22px
 	address
 		a
 			display: block
@@ -655,6 +712,8 @@ footer
 			color: #fff
 			opacity: .8
 			margin-bottom: 25px
+			+media-breakpoint-down(xl)
+			font-size: 16px
 			&:hover
 				opacity: .6
 				color: #fff
@@ -707,6 +766,10 @@ footer
 	height: 12px
 .slick-dots li.slick-active ~ li button
 	opacity: .5
+
+.sub_wrap
+	+media-breakpoint-down(xxl)
+		margin-left: -40px
 /*==========  user style  ==========*/
 
 +keyframes(menu-animation-1)
