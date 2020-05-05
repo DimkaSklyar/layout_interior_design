@@ -50,6 +50,55 @@ ul
 		height: 18px
 		display: flex
 		align-items: center
+.close_menu
+	position: absolute
+	right: 70px
+	background: none
+	border: none
+	outline: 0 none
+	cursor: pointer
+	&:focus
+		outline: 0 none
+.nav-bar
+	position: fixed
+	top: 0
+	left: 0
+	bottom: 0
+	z-index: 999999
+	width: 820px
+	padding: 70px
+	padding-left: 100px
+	padding-top: 40px
+	overflow-y: auto
+	overflow-x: hidden
+	-webkit-overflow-scrolling: touch
+	font-size: 14px
+	line-height: 34px
+	transform: translateX(-110%)
+	background: rgba(15, 15, 18, 0.95)
+	border: 0
+	transition: .25s
+	&.active
+		transform: translateX(0)
+	nav
+		display: flex
+		align-items: center
+		justify-content: center
+		height: 100%
+		font-size: 80px
+		font-weight: 900
+		line-height: 1.5
+		li
+			span
+				font-size: 18px
+				opacity: .5
+				display: inline-block
+				margin-right: 20px
+				font-weight: 500
+			a
+				color: #fff
+				&:hover
+					opacity: .4
 
 body
 	font-family: 'Montserrat', sans-serif
@@ -480,6 +529,184 @@ body
 		font-size: 18px
 		opacity: .9
 
+
+.client
+	padding: 80px 0
+	&__item
+		width: 130px
+		height: 130px
+		margin: 0 auto
+		cursor: pointer
+		filter: grayscale(1) contrast(1) opacity(0.5) blur(.6px)
+		transition: .4s
+		&:hover
+			filter: none
+		img
+			width: 100%
+			height: 100%
+			object-fit: contain
+
+.subs
+	padding: 50px 0 100px
+	&__item
+		padding-top: 60px
+	h2
+		font-weight: 900
+		font-size: 32px
+		line-height: 1
+.input-form_sub
+	background-color: #2c2b32
+	font-size: 18px
+	line-height: 1.8
+	color: #b7b7b7
+	min-width: 320px
+	border: 1px solid #2c2b32
+	border-left: 3px solid #ffffff
+	padding: 13px 19px
+
+.btn_sub
+	height: 60px
+	padding: 16px 60px 16px 30px
+	line-height: normal
+	background: #0f0f12
+	border: none
+	font-weight: 600
+	text-align: center
+	color: #ffffff
+	margin-top: 30px
+	cursor: pointer
+	margin-left: -5px
+	position: relative
+	text-transform: uppercase
+	&:before
+		position: absolute
+		content: ''
+		background: url('../img/icon/right.png') no-repeat
+		right: -10px
+		top: 50%
+		transform: translateY(-50%)
+		width: 50px
+		height: 18px
+		display: flex
+		align-items: center
+.svyaz__wrapper
+	background-color: #2c2b32
+	padding: 105px 145px
+	right: -100px
+	left: 30px
+	position: absolute
+#svyaz
+	.input__wrap
+		display: flex
+	.input__item
+		width: 100%
+		padding-right: 60px
+		margin-bottom: 60px
+	h2
+		font-size: 70px
+		font-weight: 900
+		margin-bottom: 100px
+	label
+		display: block
+		font-weight: 700
+		font-size: 32px
+	input,
+	textarea
+		width: 100%
+		display: block
+		width: 100%
+		padding: 6px 20px
+		padding-left: 0
+		font-size: 18px
+		font-weight: 400
+		line-height: 31px
+		color: #b7b7b7
+		background-color: transparent
+		background-image: none
+		border-radius: 0
+		-webkit-appearance: none
+		transition: .3s ease-in-out
+		border: none
+		border-bottom: 1px solid #515159
+		font-family: 'Montserrat', sans-serif
+		font-weight: 500
+	button
+		background: none
+		cursor: pointer
+		margin-top: -50px
+		&:hover
+			color: #ffffff
+			background-color: #515159
+			border-color: #515159
+
+
+footer
+	background-color: #0f0f12
+	padding: 80px 0 130px
+	h2
+		font-size: 28px
+		font-weight: 700
+		margin-bottom: 40px
+	address
+		a
+			display: block
+			font-weight: 400
+			font-size: 20px
+			color: #fff
+			opacity: .8
+			margin-bottom: 25px
+			&:hover
+				opacity: .6
+				color: #fff
+
+	.social-footer
+		display: flex
+		font-size: 30px
+		li
+			margin-right: 30px
+			a
+				opacity: .8
+				&:hover
+					opacity: .7
+
+.copytight
+	opacity: .5
+	&__wrap
+		background-color: #0f0f12
+		padding: 120px 0 80px
+.pagingInfo
+	position: absolute
+	z-index: 88
+	bottom: 100px
+	transform: rotate(-90deg)
+	font-size: 58px
+	font-weight: 700
+	left: 72px
+	span
+		opacity: .6
+		font-size: 23px
+		vertical-align: super
+		font-weight: 500
+.slick-dots li button
+	background-color: #fff
+	height: 40px
+.slick-dots
+	width: auto
+	bottom: 23%
+	left: 8%
+.slick-dots li
+	display: block
+	width: 4px
+	overflow: hidden
+	margin: 0 auto
+	height: 40px
+	z-index: 99
+.slick-dots li.slick-active
+	border-radius: 50%
+	width: 12px
+	height: 12px
+.slick-dots li.slick-active ~ li button
+	opacity: .5
 /*==========  user style  ==========*/
 
 +keyframes(menu-animation-1)

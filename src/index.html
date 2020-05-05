@@ -12,6 +12,16 @@
 </head>
 
 <body class="theme_black">
+	<div class="nav-bar">
+		<button class="close_menu"><img src="img/icon/close.png" alt=""></button>
+		<nav>
+			<ul>
+				<li><span>01</span><a href="#about">обо мне</a></li>
+				<li><span>02</span><a href="#portfolio">портфолио</a></li>
+				<li><span>03</span><a href="#contacts">контакты</a></li>
+			</ul>
+		</nav>
+	</div>
 	<header>
 		<div class="container-fluid navigation">
 			<div class="row">
@@ -43,6 +53,7 @@
 	<div class="container-fluid">
 		<div class="row">
 			<div class="col-8 offset-1">
+				<div class="pagingInfo">01 <span>/ 04</span></div>
 				<div class="slider slider-for">
 					<div class="slider__item">
 						<img src="img/slider/slide-4.jpg" alt="">
@@ -92,10 +103,10 @@
 		</div>
 	</div>
 
-	<section class="about section">
+	<section class="about section" id="about">
 		<div class="container">
 			<div class="row align-items-center">
-				<div class="col-6 offset-1">
+				<div class="col-6 offset-1" id="animate-left">
 					<div class="section__title">
 						<span class="big_decor">О</span>
 						<h2>Немного <span>обо мне</span></h2>
@@ -111,7 +122,7 @@
 				<div class="col-5">
 					<div class="row benefist">
 						<div class="col-6">
-							<div class="benefist__item benefist__item-1">
+							<div class="benefist__item benefist__item-1" id="animate-right-b">
 								<div class="benefist_inner">
 									<div class="benefist__number">560</div>
 								</div>
@@ -119,7 +130,7 @@
 							</div>
 						</div>
 						<div class="col-6">
-							<div class="benefist__item benefist__item-1"">
+							<div class="benefist__item benefist__item-1" id="animate-right-b-2">
 								<div class=" benefist_inner">
 								<div class="benefist__number">50</div>
 							</div>
@@ -127,7 +138,7 @@
 						</div>
 					</div>
 					<div class="col-6">
-						<div class="benefist__item">
+						<div class="benefist__item" id="animate-right-l">
 							<div class="benifist__more">
 								более чем
 							</div>
@@ -138,7 +149,7 @@
 						</div>
 					</div>
 					<div class="col-6">
-						<div class="benefist__item">
+						<div class="benefist__item" id="animate-right-l-2">
 							<div class="benifist__more">
 								более чем
 							</div>
@@ -154,7 +165,7 @@
 		</div>
 	</section>
 
-	<section class="portfolio section">
+	<section class="portfolio section" id="portfolio">
 		<div class="container">
 			<div class="row popup-gallery">
 				<div class="col-11 offset-1">
@@ -163,28 +174,28 @@
 					</div>
 				</div>
 				<div class="col-5 offset-1">
-					<div class="portfolio__item">
+					<div class="portfolio__item" id="animate-left-1">
 						<a href="img/portfolio/portfolio-1.jpg" class="portfolio__link" title="Спальня">
 							<img src="img/portfolio/portfolio-1.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<div class="col-5">
-					<div class="portfolio__item item_top">
+					<div class="portfolio__item item_top" id="animate-right-1">
 						<a href="img/portfolio/portfolio-2.jpg" class="portfolio__link" title="Гостинная">
 							<img src="img/portfolio/portfolio-2.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<div class="col-5 offset-1">
-					<div class="portfolio__item">
+					<div class="portfolio__item" id="animate-left-2">
 						<a href="img/portfolio/portfolio-3.jpg" class="portfolio__link" title="Кухня">
 							<img src="img/portfolio/portfolio-3.jpg" alt="">
 						</a>
 					</div>
 				</div>
 				<div class="col-5">
-					<div class="portfolio__item item_top">
+					<div class="portfolio__item item_top" id="animate-right-2">
 						<a href="img/portfolio/portfolio-4.jpg" class="portfolio__link" title="Бар">
 							<img src="img/portfolio/portfolio-4.jpg" alt="">
 						</a>
@@ -199,10 +210,10 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-5 offset-1">
-					<div class="section__title">
+					<div class="section__title" id="aimate-offer-l-1">
 						<h2>Специальное<span>предложение</span></h2>
 					</div>
-					<p class="section__desc">
+					<p class="section__desc" id="aimate-offer-l-2">
 						Подайте заявку до окончания акции и получите скидку 35%. Закажите Ваш будущий интерьер прямо сейчас.
 					</p>
 					<div id="clockdiv">
@@ -223,10 +234,10 @@
 							<div class="smalltext">Секунды</div>
 						</div>
 					</div>
-					<a href="#" class="btn">Получить скидку</a>
+					<a href="#" class="btn" id="aimate-offer-u-1">Получить скидку</a>
 				</div>
-				<div class="col-6">
-					<div class="offer__img">
+				<div class="col-6" id="aimate-offer-r">
+					<div class="offer__img" >
 						<img src="img/services-bg.png" alt="">
 					</div>
 					<div class="offer_sale">
@@ -241,12 +252,12 @@
 		<div class="container">
 			<div class="row">
 				<div class="col-11 offset-1">
-					<div class="section__title">
+					<div class="section__title" id="aimate-testimonial-d-1">
 						<span class="big_decor">Ч</span>
 						<h2>Что говорят<span> обо мне люди</span></h2>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4" id="aimate-testimonial-l-1">
 					<div class="testimonial__item">
 						<div class="testimonial__img bcg-1">
 							<img src="img/testimonial/testimonial-1.jpg" alt="">
@@ -259,7 +270,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4" id="aimate-testimonial-d-2">
 					<div class="testimonial__item">
 						<div class="testimonial__img bcg-1">
 							<img src="img/testimonial/testimonial-2.jpg" alt="">
@@ -273,7 +284,7 @@
 						</div>
 					</div>
 				</div>
-				<div class="col-4">
+				<div class="col-4" id="aimate-testimonial-l-2">
 					<div class="testimonial__item">
 						<div class="testimonial__img bcg-1">
 							<img src="img/testimonial/testimonial-3.jpg" alt="">
@@ -291,6 +302,114 @@
 			</div>
 		</div>
 	</section>
+
+	<section class="section client">
+		<div class="container">
+			<div class="row justify-content-center">
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-1.png" alt="">
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-2.png" alt="">
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-3.png" alt="">
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-4.png" alt="">
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-5.png" alt="">
+					</div>
+				</div>
+				<div class="col-2">
+					<div class="client__item">
+						<img src="img/clients/client-6.png" alt="">
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<section class="subs section" id="contacts">
+		<div class="container">
+			<div class="row">
+				<div class="col-5">
+					<div class="subs__item">
+						<h2>Присоединятесь к <br> рассылке новостей</h2>
+						<form id="subs">
+							<input type="email" name="email" id="email" placeholder="Email" class="input-form_sub" required>
+							<button type="submit" class="btn_sub">Подписаться</button>
+						</form>
+					</div>
+				</div>
+				<div class="col-7">
+					<div class="svyaz__wrapper">
+						<form id="svyaz">
+							<h2>Связаться со мной</h2>
+							<div class="input__wrap">
+								<div class="input__item">
+									<label for="name">Имя</label>
+									<input type="text" name="name" id="name" placeholder="Ваше имя">
+								</div>
+								<div class="input__item">
+									<label for="mail">Email</label>
+									<input type="email" name="mail" id="mail" placeholder="Ваш email">
+								</div>
+							</div>
+							<div class="input__item">
+								<label for="message">Сообщение</label>
+								<textarea name="message" id="message" rows="4" placeholder="Ваше сообщение..."></textarea>
+							</div>
+							<button type="submit" class="btn">Отправить</button>
+						</form>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<footer>
+		<div class="container">
+			<div class="row">
+				<div class="col-2">
+					<h2>Контакты</h2>
+					<address>
+						<a href="mailto:info@mail.ru">info@mail.ru</a>
+						<a href="tel:+79995553333">+7 999 5553 333</a>
+						<a href="#">Skype: designInterior</a>
+					</address>
+				</div>
+				<div class="col-2 offset-1">
+					<h2>Подписывайтесь</h2>
+					<ul class="social-footer">
+						<li class="social__item"><a href=""><i class="fa fa-vk" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href=""><i class="fa fa-behance" aria-hidden="true"></i></a></li>
+						<li class="social__item"><a href=""><i class="fa fa-pinterest" aria-hidden="true"></i></a></li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</footer>
+<div class="copytight__wrap">
+		<div class="container">
+			<div class="row">
+				<div class="copytight">
+					<p>© 2020 Дизайн Интерьеров Вадим Окунин. Все права защищены.</p>
+				</div>
+			</div>
+		</div>
+</div>
+
 
 	<script src="js/scripts.min.js"></script>
 	<script src="js/slick.min.js"></script>
