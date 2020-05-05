@@ -56,7 +56,7 @@ $(document).ready(function () {
     asNavFor: '.slider-nav',
     dots: true,
     autoplay: true,
-    autoplaySpeed: 2000000,
+    autoplaySpeed: 3000,
   });
 
   // Элемент, куда вы хотите записать страницы
@@ -67,7 +67,7 @@ $(document).ready(function () {
   slider.on('init reInit afterChange', function (event, slick, currentSlide, nextSlide) {
 
     let i = (currentSlide ? currentSlide : 0) + 1;
-    pages.html('0'+i + '<span>/ 0'+slick.slideCount+'</span>');
+    pages.html('0' + i + '<span>/ 0' + slick.slideCount + '</span>');
   });
 
   $('.slider-nav').slick({
@@ -82,16 +82,21 @@ $(document).ready(function () {
 
 
   $(window).scroll(function () {
-    if ($(this).scrollTop() > 5) {
-      $('.navigation').addClass('scroll');
-      $('.navigation .col-12').toggleClass("col-12 col-4");
-      $('.navigation .logo_desc').hide();
-    } else {
-      $('.navigation').removeClass('scroll');
-      $('.navigation .col-4').toggleClass("col-12 col-4");
-      $('.navigation .logo_desc').show();
+    if ($(window).width() > 1200) {
+      if ($(this).scrollTop() > 5) {
+        $('.navigation').addClass('scroll');
+        $('.navigation .col-xxxl-12').addClass("col-4");
+        $('.navigation .col-xxxl-12').removeClass("col-xxxl-12 col-xxl-12 col-xl-12");
+        $('.navigation .logo_desc').hide();
+      } else {
+        $('.navigation').removeClass('scroll');
+        $('.navigation .col-4').addClass("col-xxxl-12 col-xxl-12 col-xl-12");
+        $('.navigation .logo_desc').show();
+      }
     }
+
   });
+
 
   $('.popup-gallery').magnificPopup({
     delegate: 'a',
@@ -110,6 +115,15 @@ $(document).ready(function () {
       }
     }
   });
+
+  $('.image-popup-fit-width').magnificPopup({
+		type: 'image',
+		closeOnContentClick: true,
+		image: {
+			verticalFit: false
+		}
+	});
+
 
 });
 
